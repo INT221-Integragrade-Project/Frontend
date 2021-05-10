@@ -1,12 +1,12 @@
 version: '3.3'
-services:
-  front-docker:
-    build: .
-    image: myweb-images
-    container_name: frontend
-    ports:
-      - "8080:8080"
+  services:
+    front-docker:
+      build: .
+      image: myweb-images
+      container_name: frontend
+      ports:
+        - "8080:8080"
   networks:
-    default:
-      external:
-        name: project-network
+      default:
+        external:
+          name: project-network
