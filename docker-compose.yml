@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  backend:
+    container_name: "frontend"
+    build: .
+    image: myweb:latest
+    ports:
+      - "8080:80"
